@@ -6,17 +6,17 @@ function Pricing() {
     {
       name: "Basic",
       price: "Free",
-      features: ["Donate food", "Receive alerts", "Access to community"]
+      features: ["Donate food", "Receive alerts", "Access to community"],
     },
     {
       name: "Pro",
       price: "₹99/month",
-      features: ["Priority matching", "Analytics dashboard", "Volunteer management"]
-    }
+      features: ["Priority matching", "Analytics dashboard", "Volunteer management"],
+    },
   ];
 
   return (
-    <div className="bg-white py-16 px-6">
+    <section id="pricing" className="pt-24 bg-white py-16 px-6">
       <h2 className="text-3xl font-bold text-center mb-10">Pricing Plans</h2>
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {plans.map((plan, index) => (
@@ -34,7 +34,7 @@ function Pricing() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
