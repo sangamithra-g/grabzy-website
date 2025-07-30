@@ -22,7 +22,7 @@ function Features() {
   ];
 
   return (
-    <section className="bg-white py-20">
+    <section id="features" className="pt-24 bg-white py-20">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Why Choose Grabzy?</h2>
         <div className="grid md:grid-cols-3 gap-12">

@@ -3,7 +3,7 @@ import React from "react";
 
 function ContactForm() {
   return (
-    <div className="bg-gray-50 py-12 px-6 sm:px-12">
+    <section id="contact" className="pt-24 bg-gray-50 py-12 px-6 sm:px-12">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold mb-6 text-center">Contact Us</h2>
         <form className="space-y-4">
@@ -29,7 +29,7 @@ function ContactForm() {
           </button>
         </form>
       </div>
-    </div>
+    </section>
   );
 }
 
