@@ -1,6 +1,6 @@
 // src/components/HeroSection.jsx
 import React from "react";
-
+import foodDonationImg from "../assets/land.jpg";
 function HeroSection() {
   const scrollToPricing = () => {
     const pricingSection = document.getElementById("pricing");
@@ -33,11 +33,16 @@ function HeroSection() {
         </div>
         {/* Image Section */}
         <div className="w-full md:w-1/2 flex justify-center items-center p-0">
-          <img
+          {/* <img
             src="https://source.unsplash.com/1600x900/?food,donation"
             alt="Food Donation"
             className="w-full h-full object-cover"
-          />
+          /> */}
+          <img
+  src={foodDonationImg}
+  alt="Food Donation"
+  className="w-full h-full object-cover"
+/>
         </div>
       </div>
     </section>
