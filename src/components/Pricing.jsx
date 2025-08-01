@@ -15,12 +15,22 @@ function Pricing() {
     },
   ];
 
+  const handleGetStartedClick = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section id="pricing" className="pt-24 bg-white py-16 px-6">
       <h2 className="text-3xl font-bold text-center mb-10">Pricing Plans</h2>
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {plans.map((plan, index) => (
-          <div key={index} className="border p-6 rounded-lg shadow text-center">
+          <div
+            key={index}
+            className="border p-6 rounded-lg shadow text-center transition-transform hover:scale-105 duration-300"
+          >
             <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
             <p className="text-2xl font-bold text-green-600 mb-4">{plan.price}</p>
             <ul className="space-y-2 text-gray-600">
@@ -28,7 +38,10 @@ function Pricing() {
                 <li key={i}>✔ {feat}</li>
               ))}
             </ul>
-            <button className="mt-6 bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700">
+            <button
+              onClick={handleGetStartedClick}
+              className="mt-6 bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700"
+            >
               Get Started
             </button>
           </div>

@@ -8,6 +8,7 @@ import FAQ from "./components/FAQ";
 import Pricing from "./components/Pricing";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Pricing />
       <ContactForm />
       <Footer />
+      <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );
 }
